@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mocha</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+    </head>
+    <body>
+        <div id="app"></div>
+        <script src="../node_modules/should/should.js"></script>
+        <script src="../node_modules/mocha/mocha.js"></script>
+        <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.js"></script>
+        <script type="text/javascript" src="../public/js/app.js"></script>
+        <script type="text/javascript">
+          App.start();
+        </script>
+        <script>mocha.setup('bdd')</script>
+        <script src="../tests/organizations.js">
+        </script>
+        <script src="../tests/lines.js">
+        </script>
+        <script src="../tests/spots.js">
+        </script>
+        <script>
+            mocha.run();
+        </script>
+    </body>
+</html>

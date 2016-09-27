@@ -1,0 +1,1 @@
+Routes.add('*', "Main#index");
